@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Accesibilidad Ejemplos_Corregido</title>
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="Accesibilidad%20Ejemplos%20mal_files/estilos.css"
+    />
+  </head>
+
+  <body>
+    <h1>Accesibilidad Ejemplos mal</h1>
+
+    <h2>Elementos repetitivos - Ejemplo mal</h2>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#">menu 1</a>
+          <ul>
+            <li><a href="#">submenu 1.1</a></li>
+            <li><a href="#">submenu 1.2</a></li>
+            <li><a href="#">submenu 1.3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">menu 2</a>
+          <ul>
+            <li><a href="#">submenu 2.1</a></li>
+            <li><a href="#">submenu 2.2</a></li>
+            <li><a href="#">submenu 2.3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <h2>Formularios - Ejemplo Corregido</h2>
+
+    <form name="contacto" method="post" action="#">
+      <h3>Información Personal</h3>
+
+      <label for="nombre">Nombre:</label>
+      <input
+        title="Introduce tu nombre."
+        id="nombre"
+        required="true"
+        type="text"
+      />
+      <br />
+
+      <label for="correoElct">Correo Electrónico:</label>
+      <input
+        title="Introduce tu correo electrónico."
+        id="correoElct"
+        required="true"
+        type="email"
+      />
+      <br />
+
+      <label for="pgPersonal">Página personal:</label>
+      <input
+        title="Introduce la direccion a tu página personal."
+        id="pgPersonal"
+        required="true"
+        placeholder="URL de tu página web personal"
+        type="url"
+      />
+      <br />
+
+      <h3>Otra información</h3>
+
+      <label for="fecha">Fecha: </label>
+      <input title="Introduce la fecha actual." id="fecha" type="date" />
+      <br />
+
+      <label for="mes">Mes: </label>
+      <input title="Introduce el mes actual." id="mes" type="month" />
+      <br />
+
+      <label for="semana">Semana: </label>
+      <input title="Introduce la semana actual." id="semana" type="week" />
+      <br />
+
+      <label for="tiempo">Tiempo: </label>
+      <input title="Introduce la hora actual." id="tiempo" type="time" />
+      <br />
+
+      <label for="fechaTiempo">Fecha y Tiempo: </label>
+      <input
+        title="Introduce la fecha y la hora actuales."
+        id="fechaTiempo"
+        type="datetime"
+      />
+      <br />
+
+      <label for="numero">Número (min -10, max 10): </label>
+      <input
+        title="Introduce un numero entre -10 y 10."
+        id="numero"
+        min="-10"
+        max="10"
+        value="0"
+        type="number"
+      />
+      <br />
+
+      <label for="intervalo">Intervalo (min 0, max 10): </label>
+      <input
+        title="En el rango, escoge un numero entre 0 y 10."
+        id="intervalo"
+        value="5"
+        min="0"
+        max="10"
+        type="range"
+      />
+      <br />
+
+      <label for="telefono">Teléfono: </label>
+      <input
+        title="Introduce tu numero telefonico. "
+        id="telefono"
+        type="tel"
+      />
+      <br />
+
+      <label for="busqueda">Búsqueda: </label>
+      <input
+        title="Introduce algo que desees buscar, en esta página. "
+        id="busqueda"
+        type="search"
+      />
+      <br />
+
+      <label for="colorFav">Color Favorito: </label>
+      <input
+        title="Escoge tu color favorito. "
+        id="colorFav"
+        value="#000000"
+        type="color"
+      />
+      <br />
+
+      <h3>Controles</h3>
+
+      <label for="btnBorrar">Borrar</label>
+      <input
+        title="Boton que sirve para borrar los datos del formulario."
+        id="btnBorrar"
+        value="Borrar"
+        type="reset"
+      />
+
+      <label for="btnEnviar">Enviar</label>
+      <input
+        title="Boton que sirve para enviar los datos del formulario."
+        id="btnEnviar"
+        value="Enviar"
+        type="submit"
+      />
+    </form>
+
+    <hr />
+
+    <h2>Imágenes - Ejemplo Corregido</h2>
+
+    <nav>
+      <ul style="list-style: none">
+        <li>
+          <a href="anterior.html"
+            ><img
+              src="Accesibilidad%20Ejemplos%20mal_files/flecha-izq.gif"
+              alt="Flecha la cual nos permite ir a la página anterior."
+          /></a>
+          <a
+            href="indice.html"
+            title="Enlace el cual nos permite volver al indice"
+            >Índice</a
+          >
+          <a href="siguiente.html"
+            ><img
+              src="Accesibilidad%20Ejemplos%20mal_files/flecha-der.gif"
+              alt="Flecha la cual nos permite ir a la página siguiente."
+          /></a>
+        </li>
+
+        <li>
+          <h4>Menu:</h4>
+          <ul style="list-style: none">
+            <li>
+              <a
+                href="unete.html"
+                title="Enlace a la pagina, donde puedes solicitar unirte"
+                ><img
+                  src="Accesibilidad%20Ejemplos%20mal_files/logo.png"
+                  alt="Únete"
+                />Únete</a
+              >
+            </li>
+            <li>
+              <a
+                href="equipo.html"
+                title="Enlace a la pagina, donde puedes conocer a los miembros del equipo"
+                ><img
+                  src="Accesibilidad%20Ejemplos%20mal_files/logo.png"
+                  alt="Equipo"
+                />Equipo</a
+              >
+            </li>
+            <li>
+              <a
+                href="contacto.html"
+                title="Enlace a la pagina, donde nos contactar"
+                ><img
+                  src="Accesibilidad%20Ejemplos%20mal_files/logo.png"
+                  alt="Contacto"
+                />Contacto</a
+              >
+            </li>
+            <li>
+              <a
+                href="siguenos.html"
+                title="Enlace a la pagina, donde nos puedes seguir"
+                ><img
+                  src="Accesibilidad%20Ejemplos%20mal_files/logo.png"
+                  alt="Síguenos"
+                />Síguenos</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h4>
+            Teléfono de contacto:
+            <img
+              src="Accesibilidad%20Ejemplos%20mal_files/telefono.gif"
+              alt="Imagen que muestra el teléfono de contacto; 999123456 "
+            />
+          </h4>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+
+    <h2>Mapas de imágenes - Ejemplo Corregido</h2>
+
+    <img
+      src="Accesibilidad%20Ejemplos%20mal_files/img-map-area.png"
+      alt="Imagen interactiva en la cual indica que es Hackaton Lovers, y su proposito"
+      usemap="#map1"
+      height="480"
+      width="948"
+    />
+
+    <map name="map1">
+      <area
+        shape="rect"
+        coords="18,25,221,63"
+        href="index.html"
+        alt="Pagina de Inicio de Hackaton Lovers"
+      />
+      <area
+        shape="rect"
+        coords="337,40,396,64"
+        href="unete.html"
+        alt="Unirse a Hackaton Lovers"
+      />
+      <area
+        shape="rect"
+        coords="424,40,491,65"
+        href="equipo.html"
+        alt="Ver al equipo de Hackaton Lovers"
+      />
+      <area
+        shape="rect"
+        coords="520,41,612,64"
+        href="contacto.html"
+        alt="Contactar con Hackaton Lovers"
+      />
+      <area
+        shape="rect"
+        coords="641,40,728,65"
+        href="siguenos.html"
+        alt="Seguir a Hackaton Lovers"
+      />
+      <area
+        shape="rect"
+        coords="16,344,400,397"
+        href="/meetup.html"
+        alt="Meetup de Hackaton Lovers"
+      />
+    </map>
+
+    <hr />
+
+    <h2>Enlace - Ejemplo Corregido</h2>
+
+    <h3>A mi hija mayor se le ha caido su primer diente</h3>
+
+    <p>
+      Estabamos desayunando cuando de repente sucedió.
+      <a
+        href="noticia-hija-mayor.html"
+        title="Este enlace, conlleva a más información sobre la notica de cuando a mi hija mayor se le cayo el primer diente"
+        >Más información.</a
+      >
+    </p>
+
+    <h3>A mi hija pequeña le ha salido su primera muela</h3>
+
+    <p>
+      Después de comer, la pequeña dijo que le molestaba la boca.
+      <a
+        href="noticia-hija-mayor.html"
+        title="Este enlace, conlleva a más información sobre la notica de cuando a mi hija pequeña le salio su primera muela"
+        >Más información.</a
+      >
+    </p>
+
+    <hr />
+
+    <h2>Organización - Ejemplo Corregido</h2>
+
+    <h3>Nombre de la empresa</h3>
+    <h4>Eslogan de la empresa</h4>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Noticias</strong>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <small>
+              <strong>Noticia 1</strong>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><small>Desarrollo de la noticia 1</small></td>
+        </tr>
+        <tr>
+          <td>
+            <small>
+              <strong>Noticia 2</strong>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td><small>Desarrollo de la noticia 2</small></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <h2>Diagramas - Ejemplo Corregido</h2>
+
+    <img
+      src="Accesibilidad%20Ejemplos%20mal_files/disenio-centrado-usuario.png"
+      alt="Diagrama de Diseño Centrado en el Usuario"
+      longdesc="diagramaDiseno.html"
+    />
+
+    <hr />
+
+    <h2>Tablas - Ejemplo Corregido</h2>
+
+    <table summary="Una tabla que reprenta un horario escolar, con 5 columnas (Dias de la Semana), y 4 filas (Horas lectivas)" border="1">
+      <caption>
+        Horario de la clase 3ºA
+      </caption>
+
+      <thead>
+        <tr>
+          <th></th>
+          <th><strong>Lunes</strong></th>
+          <th><strong>Martes</strong></th>
+          <th><strong>Miércoles</strong></th>
+          <th><strong>Jueves</strong></th>
+          <th><strong>Viernes</strong></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th><strong>10:00</strong></th>
+          <td>Matemáticas</td>
+          <td>Matemáticas</td>
+          <td>Matemáticas</td>
+          <td>Matemáticas</td>
+          <td>Matemáticas</td>
+        </tr>
+        <tr>
+          <th><strong>11:00</strong></th>
+          <td>Lengua</td>
+          <td>Lengua</td>
+          <td>Lengua</td>
+          <td>Lengua</td>
+          <td>Lengua</td>
+        </tr>
+        <tr>
+          <th><strong>12:00</strong></th>
+          <td>C. Sociales</td>
+          <td>C. Naturales</td>
+          <td>C. Sociales</td>
+          <td>C. Naturales</td>
+          <td>Deporte</td>
+        </tr>
+        <tr>
+          <th><strong>13:00</strong></th>
+          <td>Inglés</td>
+          <td>Inglés</td>
+          <td>Inglés</td>
+          <td>Inglés</td>
+          <td>Música</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>En esta tabla puede verse el horario de la clase 3ºA</p>
+
+    <hr />
+
+    <h2>Contraste - Ejemplo Mal</h2>
+
+    <div class="importante">Este texto es importante</div>
+
+    <hr />
+  </body>
+</html>
